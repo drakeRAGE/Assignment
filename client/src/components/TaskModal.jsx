@@ -126,9 +126,6 @@ const TaskModal = ({ task, onClose, onSave, onDelete }) => {
                             className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-purple-500 focus:border-purple-500"
                         >
                             <option value="">Unassigned</option>
-                            {
-                                console.log("modal users", users)
-                            }
                             {users.map((user) => (
                                 <option key={user._id} value={user._id}>
                                     {user.username}

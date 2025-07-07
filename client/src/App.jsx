@@ -12,7 +12,7 @@ function App() {
     <Router>
       <AuthProvider>
         <SocketProvider>
-          <div className="min-h-screen bg-gradient-to-r from-pink-400 to-purple-500">
+          <div className="min-h-screen">
             <Routes>
               <Route path="/login" element={<PublicRoute><Login /></PublicRoute>} />
               <Route path="/register" element={<PublicRoute><Register /></PublicRoute>} />

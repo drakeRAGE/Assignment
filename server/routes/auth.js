@@ -6,7 +6,6 @@ const router = express.Router();
 // Register a new user
 router.post('/register', async (req, res) => {
   try {
-    console.log("Register");
     const { username, email, password } = req.body;
     
     // Check if user already exists
